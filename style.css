@@ -204,7 +204,6 @@ li a.active, li a:hover {
     animation-delay: .8s;
     position: relative;
 }
-
 .images img {
     position: relative;
 }
@@ -256,6 +255,9 @@ li a.active, li a:hover {
 .centered-title {
     text-align: center;
     margin: 2rem;
+}
+.centered-title a{
+    text-decoration: none;
 }
 .column {
     display: flex;
