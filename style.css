@@ -320,6 +320,14 @@ li a.active, li a:hover {
     margin-bottom: 5px;
     text-align: center;
 }
+.discord{
+    color:#012bc4;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
 .left{
     text-align: left;
     margin-left: 10px;
@@ -328,6 +336,7 @@ li a.active, li a:hover {
     text-align: right;
     margin-right: 10px;
 }
+
 
 /*--------------- Darkmode -------------------*/
 .mode input {
