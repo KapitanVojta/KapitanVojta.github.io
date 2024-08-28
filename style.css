@@ -330,6 +330,14 @@ li a.active, li a:hover {
     margin-bottom: 5px;
     text-align: center;
 }
+.editor{
+    color:#ff0000;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
 
 .retired{
     color:#546e7a;
