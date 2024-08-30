@@ -5,8 +5,11 @@
     --primary-color: rgb(72, 33, 129);
     --primary-dark: #0d1021;
     --primary-font: 'Outfit', sans-serif;
-    --secondary-color: rgb(230, 233, 12);
+    --secondary-color: #e6e90c;
     --back-dark: #1c1e20;
+    --next-primary-color: #181818;
+    /*--next-primary-color: #1f1f1f*/
+    --next-secondary-color: #efefef;
 }
 * {
     margin: 0;
