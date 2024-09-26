@@ -46,33 +46,58 @@
     </header>
 
     <section class="container">
-        <div class="main">
-            <div class="social">
-                <a href="https://www.twitch.tv/kapitan_vojta" target="_blank" style="--socialAni:1"><em class='bx bxl-twitch'></em><span class="visually-hidden">Twitch</span></a>
-                <a href="https://www.instagram.com/kapitanvojta_/" target="_blank" style="--socialAni:2"><em class='bx bxl-instagram'></em><span class="visually-hidden">Instagram</span></a>
-                <a href="https://www.youtube.com/@Kapitan_Vojta" target="_blank" style="--socialAni:3"><em class='bx bxl-youtube'></em><span class="visually-hidden">YouTube</span></a>
-                <a href="https://discord.com/invite/f2WRpAxaDz" target="_blank" style="--socialAni:4"><em class='bx bxl-discord'></em><span class="visually-hidden">Discord</span></a>
-            </div>
-            <div class="detail">
-                <h1>Zde je kontaktní formulář pro <span>Spolupráce</span></h1>
-                <form action="/submit_form" method="post">
-                    <label for="name">Jméno:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="query">Dotaz:</label><br>
-                    <textarea id="query" name="query" rows="4" cols="50"></textarea><br>
-                </form>
-                <div class="btn">
-                    <button onclick="sendEmail()">Odeslat</button>
-                </div>
-            </div>
-            <div class="img-sec">
-                <div class="images">
-                    <img src="./images/logo_bez_podkladu.png" alt="" class="img-w">
-                </div>
-            </div>
+      <div class="main">
+        <div class="social">
+          <a
+            href="https://www.twitch.tv/kapitan_vojta"
+            target="_blank"
+            style="--socialAni: 1"
+            ><em class="bx bxl-twitch"></em
+            ><span class="visually-hidden">Twitch</span></a
+          >
+          <a
+            href="https://www.instagram.com/kapitanvojta_/"
+            target="_blank"
+            style="--socialAni: 2"
+            ><em class="bx bxl-instagram"></em
+            ><span class="visually-hidden">Instagram</span></a
+          >
+          <a
+            href="https://www.youtube.com/@Kapitan_Vojta"
+            target="_blank"
+            style="--socialAni: 3"
+            ><em class="bx bxl-youtube"></em
+            ><span class="visually-hidden">YouTube</span></a
+          >
+          <a
+            href="https://discord.com/invite/f2WRpAxaDz"
+            target="_blank"
+            style="--socialAni: 4"
+            ><em class="bx bxl-discord"></em
+            ><span class="visually-hidden">Discord</span></a
+          >
         </div>
+        <div class="detail">
+          <h1>Zde je kontaktní formulář pro <span>Spolupráce</span></h1>
+          <form action="/submit_form" method="post">
+            <label for="name">Jméno:</label><br />
+            <input type="text" id="name" name="name" /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br />
+            <label for="query">Dotaz:</label><br />
+            <textarea id="query" name="query" rows="4" cols="50"></textarea
+            ><br />
+          </form>
+          <div class="btn">
+            <button onclick="formular()">Odeslat</button>
+          </div>
+        </div>
+        <div class="img-sec">
+          <div class="images">
+            <img src="./images/logo_new.png" alt="" class="img-w" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="script.js"></script>
