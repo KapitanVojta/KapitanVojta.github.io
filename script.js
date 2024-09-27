@@ -24,14 +24,14 @@ function formular() {
 }
 
 function sendEmail() {
-  var form_name = document.getElementById("name").value;
-  var form_email = document.getElementById("email").value;
-  var form_message = document.getElementById("query").value;
-  var email = env.EMAIL;
-  var password = env.EMAIL_PASS;
-  var mailTo1 = env.MAIL_TO_1;
-  var mailTo2 = env.MAIL_TO_2;
   try {
+    var form_name = document.getElementById("name").value;
+    var form_email = document.getElementById("email").value;
+    var form_message = document.getElementById("query").value;
+    var email = SECRETS.EMAIL;
+    var password = SECRETS.EMAIL_PASS;
+    var mailTo1 = SECRETS.MAIL_TO_1;
+    var mailTo2 = SECRETS.MAIL_TO_2;
     Email.send({
       Host: "smtp.seznam.cz",
       Username: `${email}`,
@@ -44,6 +44,9 @@ function sendEmail() {
       Dotaz: ${form_message}`,
     }).then(function (message) {
       alert("Dotaz úspěšně odeslán"); // Alert message on successful email delivery
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("query").value = "";
     });
   } catch (error) {
     alert("Něco se pokazilo. Zkuste to prosím znovu.");
