@@ -36,7 +36,7 @@ function sendEmail() {
       Host: "smtp.seznam.cz",
       Username: `${email}`,
       Password: `${password}`,
-      To: `${mailTo1}, ${mailTo2}`,
+      To: `${mailTo2}`,
       From: `${email}`,
       Subject: "Formular na webu - Spoluprace",
       Body: `Jméno: ${form_name} <br>
