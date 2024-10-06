@@ -16,6 +16,7 @@
   --new-blue-discord: #7289d9; 
   --new-blue-social: #00a8f3;
   --new-grey-retired: #585858;
+  --new-light-mode-background: #d1cbcb;
 }
 * {
   margin: 0;
@@ -24,6 +25,7 @@
 }
 body {
   font-family: "Outfit", sans-serif;
+  background-color: var(--new-light-mode-background);
 }
 /*-------------- General ----------*/
 .container {
@@ -57,7 +59,7 @@ a:hover {
 header {
   position: relative;
   box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-  background-color: #fff;
+  background-color: var(--new-light-mode-background);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -404,10 +406,19 @@ li a:hover {
 .left {
   text-align: left;
   margin-left: 10px;
+  padding-right: 10px;
 }
 .right {
   text-align: right;
   margin-right: 10px;
+  padding-left: 10px;
+}
+.role_header_right{
+  text-align:left;
+  margin-left: -5vh; 
+}
+.role_header_left{
+  text-align: center;
 }
 
 /*--------------- Darkmode -------------------*/
