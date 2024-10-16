@@ -54,3 +54,15 @@ function sendEmail() {
     console.log(error);
   }
 }
+
+function sendEmail_v2(){
+  try{
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("query").value;
+
+  }catch(error){
+    alert("Něco se pokazilo. Zkuste to prosím znovu.");
+    console.log(error);
+  }
+}
