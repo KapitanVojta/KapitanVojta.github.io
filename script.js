@@ -2,9 +2,10 @@ const darkbtn = document.getElementById("darkbtn");
 const body = document.body;
 const isDarkMode = localStorage.getItem("darkMode") === "enabled";
 
+darkbtn.checked = isDarkMode;
+
 if (isDarkMode) {
   body.classList.add("dark-mode");
-  darkbtn.checked = true;
 }
 
 darkbtn.addEventListener("change", () => {
