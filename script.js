@@ -19,7 +19,7 @@ darkbtn.addEventListener("change", () => {
 
 function formular() {
   alert(
-    "Tato funkce není ještě implementována. Pokud mě i tak chcete kontaktovat, napište na Instagram, či Discord."
+    "Na implementování této funkce se stále pracuje. Prozatím mě můžete kontaktovat na Instagramu, či Discordu."
   );
 }
 
