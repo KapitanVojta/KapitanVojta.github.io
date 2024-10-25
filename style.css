@@ -9,11 +9,11 @@
   --back-dark: #1c1e20;
   --new-primary-color: #181818;
   --new-primary-color2: #1f1f1f;
-  --new-secondary-color:#e6e90c;
+  --new-secondary-color: #e6e90c;
   --new-third-color: #efefef;
   --new-red-accent: #ff1818;
   --new-green-accent: #0ed145;
-  --new-blue-discord: #7289d9; 
+  --new-blue-discord: #7289d9;
   --new-blue-social: #00a8f3;
   --new-grey-retired: #585858;
   --new-light-mode-background: #d1cbcb;
@@ -330,6 +330,19 @@ li a:hover {
   animation: rightSideAni 1s ease forwards;
   align-self: center;
 }
+.table th {
+  border-bottom: 5px solid var(--new-primary-color);
+}
+.table-th-middle {
+  border-left: 5px solid var(--new-primary-color);
+  border-right: 5px solid var(--new-primary-color);
+}
+.table-th-right {
+  border-left: 5px solid var(--new-primary-color);
+}
+.table-th-left {
+  border-right: 5px solid var(--new-primary-color);
+}
 .banner-section {
   display: flex;
   justify-content: space-between;
@@ -386,7 +399,7 @@ li a:hover {
   margin-bottom: 5px;
   text-align: center;
 }
-.editor {
+.socials {
   color: var(--new-blue-social);
   font-weight: bold;
   margin-left: 10px;
@@ -413,12 +426,34 @@ li a:hover {
   margin-right: 10px;
   padding-left: 10px;
 }
-.role_header_right{
-  text-align:left;
-  margin-left: -5vh; 
+.table-social {
+  display: flex;
+  align-items: center;
 }
-.role_header_left{
+.table-social a {
+  display: flex;
+  align-items: center;
+}
+.table-social em {
+  margin-right: 5px;
+}
+.table-image {
+  width: 60px;
+  height: 60px;
+}
+.table-divider {
   text-align: center;
+  justify-content: space-between;
+}
+.image-text-container {
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.image-text-container img {
+  margin-right: 10px;
 }
 
 /*--------------- Darkmode -------------------*/
@@ -462,7 +497,7 @@ li a:hover {
     var(--new-third-color) 100%
   );
 }
-.dark-mode li a.active{
+.dark-mode li a.active {
   background: var(--primary-color);
   background: linear-gradient(
     to right,
@@ -484,7 +519,7 @@ li a:hover {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.dark-mode .detail span{
+.dark-mode .detail span {
   background: var(--primary-color);
   background: linear-gradient(
     to right,
