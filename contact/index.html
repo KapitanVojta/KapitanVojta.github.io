@@ -79,18 +79,21 @@
         </div>
         <div class="detail">
           <h1>Zde je kontaktní formulář pro <span>Spolupráce</span></h1>
-          <form action="/submit_form" method="post">
-            <label for="name">Jméno:</label><br />
-            <input type="text" id="name" name="name" /><br />
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label for="query">Dotaz:</label><br />
-            <textarea id="query" name="query" rows="4" cols="50"></textarea
-            ><br />
+          <form id="form" action="/submit_form" method="post">
+            <div class="field">
+              <label for="name">Jméno</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="text" name="email" id="email">
+            </div>
+            <div class="field">
+              <label for="message">Zpráva</label>
+              <input type="text" name="message" id="message">
+            </div>
+            <input type="submit" id="button" class= "btn" value="Odeslat">
           </form>
-          <div class="btn">
-            <button onclick="formular()">Odeslat</button>
-          </div>
         </div>
         <div class="img-sec">
           <div class="images">
@@ -100,6 +103,10 @@
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init('UJveIAcw-qGWd_j5u')
+    </script>
     <script src="./../script.js"></script>
 
     <footer>

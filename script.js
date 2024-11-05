@@ -24,33 +24,30 @@ function formular() {
   );
 }
 
-function sendEmail() {
-  try {
-    var form_name = document.getElementById("name").value;
-    var form_email = document.getElementById("email").value;
-    var form_message = document.getElementById("query").value;
-    var email = SECRETS.EMAIL;
-    var password = SECRETS.EMAIL_PASS;
-    var mailTo1 = SECRETS.MAIL_TO_1;
-    var mailTo2 = SECRETS.MAIL_TO_2;
-    Email.send({
-      Host: "smtp.seznam.cz",
-      Username: `${email}`,
-      Password: `${password}`,
-      To: `${mailTo2}`,
-      From: `${email}`,
-      Subject: "Formular na webu - Spoluprace",
-      Body: `Jméno: ${form_name} <br>
-      Email: ${form_email} <br>
-      Dotaz: ${form_message}`,
-    }).then(function (message) {
-      alert("Dotaz úspěšně odeslán"); // Alert message on successful email delivery
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("query").value = "";
+const btn = document.getElementById('button');
+const email = document.getElementById('email');
+const name = document.getElementById('name');
+const message = document.getElementById('message');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Posílám...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_tjfporo';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Odeslat';
+      alert('Dotaz byl úspěšně poslán. Odpověď na Váš dotaz zpracujeme a ozveme se Vám co nejrychleji.');
+      email.value = '';
+      name.value = '';
+      message.value = '';
+    }, (err) => {
+      btn.value = 'Odeslat';
+      alert("Něco se pokazilo. Pokud tento problém přetrvává, kontaktujte mě plrosím přes Instagram, či doscord.");
+      //alert(JSON.stringify(err));
     });
-  } catch (error) {
-    alert("Něco se pokazilo. Zkuste to prosím znovu.");
-    console.log(error);
-  }
-}
+});
