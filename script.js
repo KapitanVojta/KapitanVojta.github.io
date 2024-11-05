@@ -33,6 +33,11 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
+   if (!email.value || !name.value || !message.value) {
+    alert('Prosím, vyplňte všechna pole formuláře.');
+    return;
+  }
+  
    btn.value = 'Posílám...';
 
    const serviceID = 'default_service';
