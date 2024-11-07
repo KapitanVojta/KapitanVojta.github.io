@@ -2,21 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
 
 :root {
-  --primary-color: #482181;
-  --primary-dark: #0d1021;
   --primary-font: "Outfit", sans-serif;
+  --primary-color: #181818;
+  --primary-color2: #1f1f1f;
   --secondary-color: #e6e90c;
-  --back-dark: #1c1e20;
-  --new-primary-color: #181818;
-  --new-primary-color2: #1f1f1f;
-  --new-secondary-color: #e6e90c;
-  --new-third-color: #efefef;
-  --new-red-accent: #ff1818;
-  --new-green-accent: #0ed145;
-  --new-blue-discord: #7289d9;
-  --new-blue-social: #00a8f3;
-  --new-grey-retired: #585858;
-  --new-light-mode-background: #d1cbcb;
+  --third-color: #efefef;
+  --red-accent: #ff1818;
+  --green-accent: #0ed145;
+  --blue-discord: #7289d9;
+  --blue-social: #00a8f3;
+  --grey-retired: #585858;
+  --light-mode-background: #d1cbcb;
 }
 * {
   margin: 0;
@@ -25,7 +21,7 @@
 }
 body {
   font-family: "Outfit", sans-serif;
-  background-color: var(--new-light-mode-background);
+  background-color: var(--light-mode-background);
 }
 /*-------------- General ----------*/
 .container {
@@ -35,31 +31,31 @@ body {
   width: 100%;
 }
 .text-color {
-  background: var(--primary-color);
+  background: var(-primary-color);
   background: linear-gradient(
     to right,
-    var(--new-primary-color) 0%,
-    var(--new-secondary-color) 100%
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 a {
-  color: var(--new-primary-color);
+  color: var(--primary-color);
 }
 a:hover {
-  color: var(--new-secondary-color);
+  color: var(--secondary-color);
 }
 .dark-mode a {
-  color: var(--new-third-color);
+  color: var(--third-color);
 }
 
 /*--------------------------- Navigation --------------------------------*/
 header {
   position: relative;
   box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-  background-color: var(--new-light-mode-background);
+  background-color: var(--light-mode-background);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -113,8 +109,8 @@ ul li a::before {
   height: 3px;
   background: linear-gradient(
     to right,
-    var(--new-primary-color) 10%,
-    var(--new-secondary-color) 100%
+    var(--primary-color) 10%,
+    var(--secondary-color) 100%
   );
 }
 
@@ -127,11 +123,11 @@ ul li a:hover::before {
 }
 li a.active,
 li a:hover {
-  background: var(--new-primary-color);
+  background: var(--primary-color);
   background: linear-gradient(
     to right,
-    var(--new-primary-color) 10%,
-    var(--new-secondary-color) 100%
+    var(--primary-color) 10%,
+    var(--secondary-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -149,11 +145,11 @@ li a:hover {
 .mode em {
   font-size: 1.4rem;
   cursor: pointer;
-  background: var(--primary-color);
+  background: var(-primary-color);
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -194,8 +190,8 @@ li a:hover {
 .social a {
   background: linear-gradient(
     to right,
-    var(--new-primary-color) 0%,
-    var(--new-secondary-color) 100%
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -217,21 +213,21 @@ li a:hover {
 .social a:hover {
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: var(--new-primary-dark);
+  -webkit-text-fill-color: var(--primary-color2);
   background: linear-gradient(
     90deg,
-    var(--new-primary-color) 0%,
-    var(--new-secondary-color) 100%
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
   );
   box-shadow: 0 0 20px;
   transition: all 0.3s ease-in-out;
 }
 .detail span {
-  background: var(--new-primary-color);
+  background: var(--primary-color);
   background: linear-gradient(
     to right,
-    var(--new-primary-color) 10%,
-    var(--new-secondary-color) 100%
+    var(--primary-color) 10%,
+    var(--secondary-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -259,8 +255,8 @@ li a:hover {
   border-radius: 36px;
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   margin-top: 2rem;
   padding: 1px;
@@ -284,11 +280,11 @@ li a:hover {
 .detail button:hover {
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: var(--new-primary-dark);
+  -webkit-text-fill-color: var(--primary-color2);
   background: linear-gradient(
     90deg,
-    var(--new-primary-color) 0%,
-    var(--new-secondary-color) 100%
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
   );
   transition: all 0.3s ease-in-out;
 }
@@ -322,26 +318,26 @@ li a:hover {
   margin: auto;
 }
 .highlight {
-  color: var(--new-primary-color);
+  color: var(--primary-color);
 }
 .table {
-  border: 5px solid var(--new-primary-color);
+  border: 5px solid var(--primary-color);
   margin: 0 auto;
   animation: rightSideAni 1s ease forwards;
   align-self: center;
 }
 .table th {
-  border-bottom: 5px solid var(--new-primary-color);
+  border-bottom: 5px solid var(--primary-color);
 }
 .table-th-middle {
-  border-left: 5px solid var(--new-primary-color);
-  border-right: 5px solid var(--new-primary-color);
+  border-left: 5px solid var(--primary-color);
+  border-right: 5px solid var(--primary-color);
 }
 .table-th-right {
-  border-left: 5px solid var(--new-primary-color);
+  border-left: 5px solid var(--primary-color);
 }
 .table-th-left {
-  border-right: 5px solid var(--new-primary-color);
+  border-right: 5px solid var(--primary-color);
 }
 .banner-section {
   display: flex;
@@ -367,37 +363,37 @@ li a:hover {
 
 /*----------------- Table text ------------------*/
 .streamer {
-  color: var(--new-secondary-color);
+  color: var(--secondary-color);
   font-weight: bold;
   margin: 20px 10px 10px 10px;
   text-align: center;
 }
 .hlmod {
-  color: var(--new-red-accent);
+  color: var(--red-accent);
   font-weight: bold;
   margin: 0 10px 10px 10px;
   text-align: center;
 }
 .mod {
-  color: var(--new-green-accent);
+  color: var(--green-accent);
   font-weight: bold;
   margin: 0 10px 5px 10px;
   text-align: center;
 }
 .discord {
-  color: var(--new-blue-discord);
+  color: var(--blue-discord);
   font-weight: bold;
   margin: 0 10px 5px 10px;
   text-align: center;
 }
 .socials {
-  color: var(--new-blue-social);
+  color: var(--blue-social);
   font-weight: bold;
   margin: 0 10px 5px 10px;
   text-align: center;
 }
 .retired {
-  color: var(--new-grey-retired);
+  color: var(--grey-retired);
   font-weight: bold;
   margin: 0 10px 5px 10px;
   text-align: center;
@@ -464,12 +460,12 @@ li a:hover {
   display: none;
 }
 .dark-mode {
-  background-color: var(--new-primary-color2);
+  background-color: var(--primary-color2);
   color: #ffffff;
 }
 .dark-mode .social a:hover {
-  color: var(--new-primary-color);
-  background-color: var(--new-third-color);
+  color: var(--primary-color);
+  background-color: var(--third-color);
 }
 .dark-mode .logo a {
   color: #fff;
@@ -477,16 +473,16 @@ li a:hover {
 .dark-mode .detail button {
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: var(--new-third-dark);
+  -webkit-text-fill-color: var(--third-dark);
 }
 .dark-mode header {
   box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-  background: var(--new-primary-color);
+  background: var(--primary-color);
 }
 .dark-mode ul li a::before {
   content: "";
@@ -496,49 +492,49 @@ li a:hover {
   height: 3px;
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
 }
 .dark-mode li a.active {
-  background: var(--primary-color);
+  background: var(-primary-color);
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .dark-mode li a:hover {
-  background: var(--new-secondary-color);
+  background: var(--secondary-color);
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .dark-mode .detail span {
-  background: var(--primary-color);
+  background: var(-primary-color);
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .dark-mode .text-color {
-  background: var(--primary-color);
+  background: var(-primary-color);
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -547,8 +543,8 @@ li a:hover {
 .dark-mode .social a {
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -570,21 +566,21 @@ li a:hover {
 .dark-mode .social a:hover {
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: var(--new-third-dark);
+  -webkit-text-fill-color: var(--third-dark);
   background: linear-gradient(
     90deg,
-    var(--new-secondary-color) 0%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
   );
   box-shadow: 0 0 20px;
   transition: all 0.3s ease-in-out;
 }
 .dark-mode .detail span {
-  background: var(--new-third-color);
+  background: var(--third-color);
   background: linear-gradient(
     to right,
-    var(--new-secondary-color) 10%,
-    var(--new-third-color) 100%
+    var(--secondary-color) 10%,
+    var(--third-color) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -819,15 +815,15 @@ li a:hover {
   .dark-mode .menu {
     background: linear-gradient(
       to right,
-      var(--new-third-color) 40%,
-      var(--new-secondary-color) 100%
+      var(--third-color) 40%,
+      var(--secondary-color) 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .dark-mode ul {
-    background: var(--primary-dark);
+    background: var(--primary-color2);
   }
   .mode {
     position: absolute;
