@@ -35,8 +35,13 @@
           <li><a href="./../" style="--navAni: 1">About</a></li>
           <li><a href="./../ateam/" style="--navAni: 2">A-TEAM</a></li>
           <li><a href="./../stream/" style="--navAni: 3">Stream</a></li>
-          <li><a href="" class="active" style="--navAni: 4">Contact</a></li>
-          <li><a href="https://linktr.ee/Kapitan_Vojta" style="--navAni: 5">LinkTree</a></li>
+          <li><a href="./../donathon/" style="--navAni: 4">Donathon</a></li>
+          <li><a href="" class="active" style="--navAni: 5">Contact</a></li>
+          <li>
+            <a href="https://linktr.ee/Kapitan_Vojta" style="--navAni: 6"
+              >LinkTree</a
+            >
+          </li>
         </ul>
         <label class="mode" for="darkbtn">
           <span class="visually-hidden">Dark Mode</span>
@@ -83,17 +88,17 @@
           <form id="form" action="/submit_form" method="post">
             <div class="field">
               <label for="name">Jméno</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" />
             </div>
             <div class="field">
               <label for="email">E-mail</label>
-              <input type="text" name="email" id="email">
+              <input type="text" name="email" id="email" />
             </div>
             <div class="field">
               <label for="message">Zpráva</label>
-              <input type="text" name="message" id="message">
+              <input type="text" name="message" id="message" />
             </div>
-            <input type="submit" id="button" class= "btn" value="Odeslat">
+            <input type="submit" id="button" class="btn" value="Odeslat" />
           </form>
         </div>
         <div class="img-sec">
@@ -106,7 +111,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-      emailjs.init('UJveIAcw-qGWd_j5u')
+      emailjs.init("UJveIAcw-qGWd_j5u");
     </script>
     <script src="./../script.js"></script>
 

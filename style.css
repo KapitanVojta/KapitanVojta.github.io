@@ -360,6 +360,18 @@ li a:hover {
   margin: auto;
   text-align: center;
 }
+.small-text {
+  font-size: 0.7em;
+  margin-top: -20px;
+}
+
+.detail_donathon{
+  text-align: center;
+}
+
+.detail_donathon h1{
+  margin: 20px;
+}
 
 /*----------------- Table text ------------------*/
 .streamer {
@@ -756,11 +768,17 @@ li a:hover {
     clip: rect(0, 0, 0, 0);
     border: 0;
   }
-  .streamer, .hlmod, .mod, .discord, .socials, .retired {
+  .streamer,
+  .hlmod,
+  .mod,
+  .discord,
+  .socials,
+  .retired {
     margin: 10px 5px;
     font-size: 14px;
   }
-  .left, .right {
+  .left,
+  .right {
     margin: 5px;
     padding: 5px;
   }
@@ -867,11 +885,17 @@ li a:hover {
 
 /*---------- Extra Small phones ---------*/
 @media (max-width: 480px) {
-  .streamer, .hlmod, .mod, .discord, .socials, .retired {
+  .streamer,
+  .hlmod,
+  .mod,
+  .discord,
+  .socials,
+  .retired {
     margin: 5px 2px;
     font-size: 12px;
   }
-  .left, .right {
+  .left,
+  .right {
     margin: 2px;
     padding: 2px;
   }
