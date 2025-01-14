@@ -1,10 +1,15 @@
 const darkbtn = document.getElementById("darkbtn");
 const body = document.body;
-const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+let isDarkMode = localStorage.getItem("darkMode");
 
-darkbtn.checked = isDarkMode;
+if (isDarkMode === null) {
+  isDarkMode = "enabled";
+  localStorage.setItem("darkMode", "enabled");
+}
 
-if (isDarkMode) {
+darkbtn.checked = isDarkMode === "enabled";
+
+if (isDarkMode === "enabled") {
   body.classList.add("dark-mode");
 }
 
@@ -24,35 +29,40 @@ function formular() {
   );
 }
 
-const btn = document.getElementById('button');
-const email = document.getElementById('email');
-const name = document.getElementById('name');
-const message = document.getElementById('message');
+const btn = document.getElementById("button");
+const email = document.getElementById("email");
+const name = document.getElementById("name");
+const message = document.getElementById("message");
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
 
-   if (!email.value || !name.value || !message.value) {
-    alert('Prosím, vyplňte všechna pole formuláře.');
+  if (!email.value || !name.value || !message.value) {
+    alert("Prosím, vyplňte všechna pole formuláře.");
     return;
   }
-  
-   btn.value = 'Posílám...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_tjfporo';
+  btn.value = "Posílám...";
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Odeslat';
-      alert('Dotaz byl úspěšně poslán. Odpověď na Váš dotaz zpracujeme a ozveme se Vám co nejrychleji.');
-      email.value = '';
-      name.value = '';
-      message.value = '';
-    }, (err) => {
-      btn.value = 'Odeslat';
-      alert("Něco se pokazilo. Pokud tento problém přetrvává, kontaktujte mě plrosím přes Instagram, či doscord.");
+  const serviceID = "default_service";
+  const templateID = "template_tjfporo";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = "Odeslat";
+      alert(
+        "Dotaz byl úspěšně poslán. Odpověď na Váš dotaz zpracujeme a ozveme se Vám co nejrychleji."
+      );
+      email.value = "";
+      name.value = "";
+      message.value = "";
+    },
+    (err) => {
+      btn.value = "Odeslat";
+      alert(
+        "Něco se pokazilo. Pokud tento problém přetrvává, kontaktujte mě plrosím přes Instagram, či doscord."
+      );
       //alert(JSON.stringify(err));
-    });
+    }
+  );
 });
