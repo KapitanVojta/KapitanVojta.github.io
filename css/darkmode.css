@@ -1,0 +1,133 @@
+/*--------------- Darkmode -------------------*/
+/* all the dark mode settings */
+
+.mode input {
+  display: none;
+}
+.dark-mode {
+  background-color: var(--primary-color2);
+  color: #ffffff;
+}
+.dark-mode .social a:hover {
+  color: var(--primary-color);
+  background-color: var(--third-color);
+}
+.dark-mode .logo a {
+  color: #fff;
+}
+.dark-mode .detail button {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--third-dark);
+}
+.dark-mode header {
+  box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
+  background: var(--primary-color);
+}
+.dark-mode ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 2rem);
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+}
+.dark-mode li a.active {
+  background: var(--primary-color);
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark-mode li a:hover {
+  background: var(--secondary-color);
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark-mode .detail span {
+  background: var(--primary-color);
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark-mode .text-color {
+  background: var(--primary-color);
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark-mode .social a {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1.6px solid;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.39rem;
+  text-align: center;
+  opacity: 0;
+  animation: SocialAni 1s ease forwards;
+  animation-delay: calc(0.2s * var(--socialAni));
+  display: flex;
+  flex-wrap: wrap;
+}
+.dark-mode .social a:hover {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--third-dark);
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
+  box-shadow: 0 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+.dark-mode .detail span {
+  background: var(--third-color);
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 10%,
+    var(--third-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

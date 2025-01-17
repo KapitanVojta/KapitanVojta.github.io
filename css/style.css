@@ -1,0 +1,305 @@
+/* root file for all css files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
+
+/* import of other css files */
+@import "all_sites.css";
+@import "animation.css";
+@import "navigation.css";
+@import "darkmode.css";
+@import "table_text.css";
+@import "form.css";
+
+/* ----- root variables for colors and font ----- */
+:root {
+  --primary-font: "Outfit", sans-serif;
+  --primary-color: #181818;
+  --primary-color2: #1f1f1f;
+  --secondary-color: #e6e90c;
+  --third-color: #efefef;
+  --red-accent: #ff1818;
+  --green-accent: #0ed145;
+  --blue-discord: #7289d9;
+  --blue-social: #00a8f3;
+  --grey-retired: #585858;
+  --light-mode-background: #d1cbcb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-mode-background);
+}
+/*-------------- General ----------*/
+.container {
+  padding: 0 8.4rem;
+}
+.img-w {
+  width: 100%;
+}
+.text-color {
+  background: var(--primary-color);
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+a {
+  color: var(--primary-color);
+}
+a:hover {
+  color: var(--secondary-color);
+}
+.dark-mode a {
+  color: var(--third-color);
+}
+
+/*----------------   WCAG 2.0 validace   -------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*-------------- Optimalization for other devices --------------*/
+/* default view is taken for computers, others are below */
+
+/*---------- Tablets ---------*/
+@media screen and (max-width: 1365px) {
+  html {
+    font-size: 80%;
+  }
+  header {
+    height: auto;
+    width: auto;
+  }
+  .container {
+    padding: 0 4.4rem;
+  }
+  .detail_twitch {
+    flex-direction: column;
+  }
+  .twitch-stream {
+    display: none;
+  }
+  .twitch-chat {
+    padding-left: 50px;
+  }
+  #embed_chat {
+    width: 80vw !important;
+    height: 100vh !important;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}
+
+/*---------- Phones ---------*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  header {
+    height: auto;
+    width: auto;
+  }
+  .container {
+    padding: 0 1.6rem;
+  }
+  .main {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .images {
+    width: 60%;
+    margin: auto;
+  }
+  .detail_twitch {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .twitch-chat {
+    display: block;
+    padding-left: 30px;
+    margin: auto;
+  }
+  #embed_chat {
+    width: 90vw !important;
+    height: 140vh !important;
+  }
+  .table {
+    width: 100%;
+    display: block;
+    font-size: 11px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .streamer,
+  .hlmod,
+  .mod,
+  .discord,
+  .socials,
+  .retired {
+    margin: 10px 5px;
+    font-size: 14px;
+  }
+  .left,
+  .right {
+    margin: 5px;
+    padding: 5px;
+  }
+  .table-image {
+    width: 40px;
+    height: 40px;
+  }
+  .image-text-container {
+    margin: 10px 0;
+  }
+  .image-text-container img {
+    margin-right: 5px;
+  }
+}
+
+/*---------- Small phones ---------*/
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 100%;
+  }
+  header {
+    height: auto;
+    width: auto;
+  }
+  .table {
+    width: 100%;
+    display: block;
+    font-size: 14px;
+  }
+  ul {
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 3.4rem;
+    left: -100%;
+    z-index: 111111;
+  }
+  .menu {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #244d61;
+  }
+  #click:checked ~ ul {
+    left: 0%;
+    transition: all 0.3s ease;
+  }
+  .dark-mode .menu {
+    background: linear-gradient(
+      to right,
+      var(--third-color) 40%,
+      var(--secondary-color) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .dark-mode ul {
+    background: var(--primary-color2);
+  }
+  .mode {
+    position: absolute;
+    right: 4rem;
+  }
+  .images {
+    width: 88%;
+    margin: auto;
+  }
+  .detail_twitch {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .twitch-stream {
+    display: none;
+  }
+  .twitch-chat {
+    display: block;
+    padding: 0px;
+  }
+  #embed_chat {
+    width: 80vw !important;
+    height: 100vh !important;
+  }
+  .table {
+    width: 100%;
+    display: block;
+    font-size: 11px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}
+
+/*---------- Extra Small phones ---------*/
+@media (max-width: 480px) {
+  .streamer,
+  .hlmod,
+  .mod,
+  .discord,
+  .socials,
+  .retired {
+    margin: 5px 2px;
+    font-size: 12px;
+  }
+  .left,
+  .right {
+    margin: 2px;
+    padding: 2px;
+  }
+  .table-image {
+    width: 30px;
+    height: 30px;
+  }
+  .image-text-container {
+    margin: 5px 0;
+  }
+  .image-text-container img {
+    margin-right: 2px;
+  }
+}
