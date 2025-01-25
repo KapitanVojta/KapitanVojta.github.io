@@ -1,0 +1,114 @@
+[
+  {
+    "role": "streamer",
+    "data": [
+      {
+        "name": "Kapitán Vojta",
+        "description": "Streamer",
+        "discord": "kapitan__vojta"
+      }
+    ],
+    "path_to_image": "./../images/logo_new.png",
+    "description": "Streamer"
+  },
+  {
+    "role": "hlmod",
+    "data": [
+      {
+        "name": "cpt_Granc3k",
+        "description": "Hlavní Moderátor",
+        "discord": "Granc3k"
+      },
+      {
+        "name": "cpt_Worden",
+        "description": "Pravá ruka Hlavního Moderátor",
+        "discord": "cpt_worden"
+      }
+    ],
+    "path_to_image": "./../images/logo_vedeni.png",
+    "description": "Vedení A-Týmu"
+  },
+  {
+    "role": "mod",
+    "data": [
+      {
+        "name": "cpt_arianwashere",
+        "description": "Moderátor",
+        "discord": "arianwashere"
+      },
+      {
+        "name": "cpt_crazy_sarah",
+        "description": "Moderátorka",
+        "discord": "alexis <3"
+      },
+      {
+        "name": "cpt_matlevcz",
+        "description": "Moderátor",
+        "discord": "matlevCZ"
+      },
+      {
+        "name": "cpt_slivka_jeagermeister",
+        "description": "Moderátor",
+        "discord": "._.jeagermeister._."
+      },
+      {
+        "name": "cpt_picusakzesumavy",
+        "description": "Moderátor",
+        "discord": "picuszesumavy"
+      },
+      {
+        "name": "junacek",
+        "description": "Moderátorka",
+        "discord": "junacek"
+      },
+      {
+        "name": "MetasCZ",
+        "description": "Moderátor",
+        "discord": "metascz"
+      },
+      {
+        "name": "xvasl_real",
+        "description": "Moderátor",
+        "discord": "hovornik"
+      }
+    ],
+    "path_to_image": "./../images/logo_mod.png",
+    "description": "Mod - Tým"
+  },
+  {
+    "role": "discord",
+    "data": [
+      {
+        "name": "hedex5",
+        "description": "Hlavní Discord technik",
+        "discord": "hedex5"
+      }
+    ],
+    "path_to_image": "./../images/logo_discord.png",
+    "description": "Discord - Tým"
+  },
+  {
+    "role": "socials",
+    "data": [
+      {
+        "name": "nykolz",
+        "description": "Editor",
+        "discord": "nykolz"
+      }
+    ],
+    "path_to_image": "./../images/logo_socky.png",
+    "description": "Socials - Tým"
+  },
+  {
+    "role": "retired",
+    "data": [
+      {
+        "name": "Najt___",
+        "description": "Retired",
+        "discord": "najt_"
+      }
+    ],
+    "path_to_image": "./../images/logo_retired.png",
+    "description": "Retired členi"
+  }
+]
