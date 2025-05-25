@@ -1,0 +1,76 @@
+/*----------------- Table text ------------------*/
+/* formating for table and text in it */
+.streamer {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin: 20px 10px 10px 10px;
+  text-align: center;
+}
+.hlmod {
+  color: var(--red-accent);
+  font-weight: bold;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+.mod {
+  color: var(--green-accent);
+  font-weight: bold;
+  margin: 0 10px 5px 10px;
+  text-align: center;
+}
+.discord {
+  color: var(--blue-discord);
+  font-weight: bold;
+  margin: 0 10px 5px 10px;
+  text-align: center;
+}
+.socials {
+  color: var(--blue-social);
+  font-weight: bold;
+  margin: 0 10px 5px 10px;
+  text-align: center;
+}
+.retired {
+  color: var(--grey-retired);
+  font-weight: bold;
+  margin: 0 10px 5px 10px;
+  text-align: center;
+}
+.left {
+  text-align: left;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.right {
+  text-align: right;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.table-social {
+  display: flex;
+  align-items: center;
+}
+.table-social a {
+  display: flex;
+  align-items: center;
+}
+.table-social em {
+  margin-right: 5px;
+}
+.table-image {
+  width: 60px;
+  height: 60px;
+}
+.table-divider {
+  padding-right: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+.image-text-container {
+  display: flex;
+  align-items: center;
+  margin: 15px -5px;
+}
+.image-text-container img {
+  margin-right: 10px;
+}
