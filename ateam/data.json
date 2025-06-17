@@ -42,11 +42,6 @@
         "discord": "._.jeagermeister._."
       },
       {
-        "name": "cpt_picusakzesumavy",
-        "description": "Moderátor",
-        "discord": "picuszesumavy"
-      },
-      {
         "name": "MetasCZ",
         "description": "Moderátor",
         "discord": "metascz"
@@ -71,18 +66,6 @@
     ],
     "path_to_image": "./../images/logo_discord.png",
     "description": "Discord - Tým"
-  },
-  {
-    "role": "socials",
-    "data": [
-      {
-        "name": "nykolz",
-        "description": "Editor",
-        "discord": "nykolz"
-      }
-    ],
-    "path_to_image": "./../images/logo_socky.png",
-    "description": "Socials - Tým"
   },
   {
     "role": "retired",
