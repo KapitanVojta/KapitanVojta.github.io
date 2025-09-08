@@ -32,6 +32,11 @@
     "role": "mod",
     "data": [
       {
+        "name": "adel_barnosakova",
+        "description": "Moderátorka",
+        "discord": "barnosakova_adel"
+      },
+      {
         "name": "cpt_arianwashere",
         "description": "Moderátor",
         "discord": "arianwashere"
