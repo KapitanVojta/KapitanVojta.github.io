@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycby0rH5l3JfbVVUw2-HpaGV1oAQNTLHvBYiLdo9BNw90N7bZIK2r_1X3CX6yPMlKdmE4Kw/exec?path=json&token=tajneheslo123456";
+const API_URL = "https://script.google.com/macros/s/AKfycby0rH5l3JfbVVUw2-HpaGV1oAQNTLHvBYiLdo9BNw90N7bZIK2r_1X3CX6yPMlKdmE4Kw/exec?path=json&token=tajne123456";
 
 function fmtDate(iso) {
   if (!iso) return "—";
