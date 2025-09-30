@@ -79,6 +79,18 @@
     "description": "Discord - Tým"
   },
   {
+    "role": "socials",
+    "data": [
+      {
+        "name": "loxykk",
+        "description": "Editor",
+        "discord": "Loxy"
+      }
+    ],
+    "path_to_image": "./../images/logo_socky.png",
+    "description": "Editor"
+  },
+  {
     "role": "retired",
     "data": [
       
