@@ -60,7 +60,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
     (err) => {
       btn.value = "Odeslat";
       alert(
-        "Něco se pokazilo. Pokud tento problém přetrvává, kontaktujte mě plrosím přes Instagram, či doscord."
+        "Něco se pokazilo. Pokud tento problém přetrvává, kontaktujte mě plrosím přes Instagram, či discord."
       );
       //alert(JSON.stringify(err));
     }

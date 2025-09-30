@@ -20,10 +20,11 @@
         "discord": "Granc3k"
       },
       {
-        "name": "cpt_Worden",
-        "description": "Pravá ruka Hlavního Moderátora",
-        "discord": "cpt_worden"
+        "name": "Najt___",
+        "description": "Senior Moderátor",
+        "discord": "najt_"
       }
+      
     ],
     "path_to_image": "./../images/logo_vedeni.png",
     "description": "Vedení A-Týmu"
@@ -32,14 +33,19 @@
     "role": "mod",
     "data": [
       {
-        "name": "adel_barnosakova",
-        "description": "Moderátorka",
-        "discord": "barnosakova_adel"
+        "name": "cpt_Worden",
+        "description": "Senior Moderátor",
+        "discord": "cpt_worden"
       },
       {
         "name": "cpt_arianwashere",
-        "description": "Moderátor",
+        "description": "Senior Moderátor",
         "discord": "arianwashere"
+      },
+      {
+        "name": "adel_barnosakova",
+        "description": "Moderátorka",
+        "discord": "barnosakova_adel"
       },
       {
         "name": "cpt_slivka_jeagermeister",
@@ -75,11 +81,7 @@
   {
     "role": "retired",
     "data": [
-      {
-        "name": "Najt___",
-        "description": "Retired",
-        "discord": "najt_"
-      }
+      
     ],
     "path_to_image": "./../images/logo_retired.png",
     "description": "Retired členi"
