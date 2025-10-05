@@ -61,6 +61,11 @@
         "name": "xvasl_real",
         "description": "Moderátor",
         "discord": "cpt_xvasl"
+      },
+      {
+        "name": "Mily_Bobr",
+        "description": "Zkušební Moderátor",
+        "discord": "Bobrc"
       }
     ],
     "path_to_image": "./../images/logo_mod.png",
