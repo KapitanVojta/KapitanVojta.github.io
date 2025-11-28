@@ -201,7 +201,7 @@ a:hover {
     display: block;
     font-size: 14px;
   }
-  ul {
+  header .page-header > ul {
     background: #fff;
     width: 100%;
     height: 100vh;
@@ -233,7 +233,7 @@ a:hover {
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .dark-mode ul {
+  .dark-mode header .page-header > ul {
     background: var(--primary-color2);
   }
   .mode {

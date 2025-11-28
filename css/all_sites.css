@@ -224,10 +224,21 @@
   margin-top: -20px;
 }
 
-.detail_giveaway {
+.detail_event {
   text-align: center;
 }
 
-.detail_giveaway h1 {
+.detail_event h1 {
   margin: 20px;
+}
+
+/* Utilita na list aby tam nebyly odrážky */
+.plain-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  display: block; /* override global nav ul flex */
+}
+.plain-list li {
+  margin: 0.5rem 0;
 }
