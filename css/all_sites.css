@@ -237,8 +237,22 @@
   list-style: none;
   padding-left: 0;
   margin-left: 0;
-  display: block; /* override global nav ul flex */
+  display: block; /* override globalního nav ul flexu */
 }
 .plain-list li {
   margin: 0.5rem 0;
+}
+
+/* Responsive event image - aby to dobře fachčilo i s phony */
+.event-image {
+  display: block;
+  margin: 20px auto;
+  width: clamp(280px, 85vw, 700px);
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .event-image {
+    width: 90vw; /* malý telefony maj smůlu LULW */
+  }
 }
