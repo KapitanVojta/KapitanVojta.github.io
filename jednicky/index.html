@@ -1,64 +1,88 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sběr "1" — seznam</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sběr "1" — seznam</title>
 
-  <!-- Globální styl webu -->
-  <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
-  <!-- Jen MINIMÁLNÍ lokální styl na rozumné odsazení/layout -->
-  <style>
-    .wrap { max-width: 900px; margin: 24px auto; padding: 0 16px; }
-    .card { padding: 16px; border-radius: 12px; }
-    .muted { opacity: .8; }
-    header.top {
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      padding: 10px 12px; margin-bottom: 16px;
-      background: rgba(0,0,0,.06); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.08) inset;
-    }
-    pre#list { white-space: pre-wrap; word-break: break-word; min-height: 56px; }
-    .row { display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
-  </style>
-</head>
-<body>
-  <main class="wrap">
-    <header class="top">
-      <h1 style="margin:0;">Seznam uživatelů, co napsali „1“</h1>
-      <a href="/" class="btn">← Zpět</a>
-    </header>
+    <!-- Jen MINIMÁLNÍ lokální styl na rozumné odsazení/layout -->
+    <style>
+      .wrap {
+        max-width: 900px;
+        margin: 24px auto;
+        padding: 0 16px;
+      }
+      .card {
+        padding: 16px;
+        border-radius: 12px;
+      }
+      .muted {
+        opacity: 0.8;
+      }
+      header.top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 12px;
+        margin-bottom: 16px;
+        background: rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) inset;
+      }
+      pre#list {
+        white-space: pre-wrap;
+        word-break: break-word;
+        min-height: 56px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="top">
+        <h1 style="margin: 0">Seznam uživatelů, co napsali „1“</h1>
+        <a href="/" class="btn">← Zpět</a>
+      </header>
 
-    <section class="card">
-      <div id="startTime" class="muted">Začátek sběru: —</div>
-      <div id="count" style="font-weight:700; margin:6px 0 12px;">Počet: 0</div>
+      <section class="card">
+        <div id="startTime" class="muted">Začátek sběru: —</div>
+        <div id="count" style="font-weight: 700; margin: 6px 0 12px">
+          Počet: 0
+        </div>
 
-      <pre id="list" data-users="">Nikdo se nepřihlásil.</pre>
+        <pre id="list" data-users="">Nikdo se nepřihlásil.</pre>
 
-      <div class="row">
-        <button id="copyBtn">Kopírovat seznam</button>
-        <button id="reloadBtn">Načíst znovu</button>
-      </div>
+        <div class="row">
+          <button id="copyBtn">Kopírovat seznam</button>
+          <button id="reloadBtn">Načíst znovu</button>
+        </div>
 
-      <p id="status" class="muted" style="margin-top:10px;">Stav: načítám…</p>
-    </section>
-  </main>
+        <p id="status" class="muted" style="margin-top: 10px">Stav: načítám…</p>
+      </section>
+    </main>
 
-  <!-- Globální JS (pokud ho máš) -->
-  <script src="/script.js"></script>
-  <!-- Lokální JS pro načtení dat a kopírování (beze změny) -->
-  <script src="./script.js"></script>
+    <script src="/script.js"></script>
 
-  <footer>
+    <script src="./script.js"></script>
+
+    <footer>
       <div class="centered-title">
-        <p>© 2024 Kapitán Vojta</p>
+        <p>© 2025 Kapitán Vojta</p>
         <p>
           Made by
           <a href="https://github.com/Granc3k" target="_blank"
-            ><span class="text-color">cpt_Granc3k</span></a
+            ><span class="text-color">Granc3k</span></a
           >
         </p>
       </div>
     </footer>
-</body>
+  </body>
 </html>
