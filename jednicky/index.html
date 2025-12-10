@@ -1,88 +1,68 @@
 <!DOCTYPE html>
 <html lang="cs">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sběr "1" — seznam</title>
-
-    <link rel="stylesheet" href="/css/style.css" />
-
-    <!-- Jen MINIMÁLNÍ lokální styl na rozumné odsazení/layout -->
-    <style>
-      .wrap {
-        max-width: 900px;
-        margin: 24px auto;
-        padding: 0 16px;
-      }
-      .card {
-        padding: 16px;
-        border-radius: 12px;
-      }
-      .muted {
-        opacity: 0.8;
-      }
-      header.top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 10px 12px;
-        margin-bottom: 16px;
-        background: rgba(0, 0, 0, 0.06);
-        border-radius: 8px;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) inset;
-      }
-      pre#list {
-        white-space: pre-wrap;
-        word-break: break-word;
-        min-height: 56px;
-      }
-      .row {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-        margin-top: 12px;
-      }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <header class="top">
-        <h1 style="margin: 0">Seznam uživatelů, co napsali „1“</h1>
-        <a href="/" class="btn">← Zpět</a>
+  <!DOCTYPE html>
+  <html lang="cs">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Sběr "1" — seznam</title>
+      <link rel="shortcut icon" type="image/x-icon" href="./../images/logo_new.png" />
+      <link rel="stylesheet" href="./../css/style.css" />
+    </head>
+    <body class="dark-mode">
+      <header class="container">
+        <div class="page-header">
+          <div class="logo">
+            <a href="./../">Kapitán Vojta</a>
+          </div>
+          <input type="checkbox" id="click" />
+          <label for="click" class="mainicon menu">
+            <em class="bx bx-menu"></em>
+            <span class="visually-hidden">Menu</span>
+          </label>
+          <ul>
+            <li><a href="./../" style="--navAni: 1">About</a></li>
+            <li><a href="./../ateam/" style="--navAni: 2">A-TEAM</a></li>
+            <li><a href="./../stream/" style="--navAni: 3">Stream</a></li>
+            <li><a href="./../kapitanthon/" style="--navAni: 4">Kapitánthon</a></li>
+            <li><a href="./../contact/" style="--navAni: 5">Contact</a></li>
+            <li>
+              <a href="https://linktr.ee/Kapitan_Vojta" style="--navAni: 6">LinkTree</a>
+            </li>
+          </ul>
+        </div>
       </header>
 
-      <section class="card">
-        <div id="startTime" class="muted">Začátek sběru: —</div>
-        <div id="count" style="font-weight: 700; margin: 6px 0 12px">
-          Počet: 0
+      <section class="container">
+        <div class="detail">
+          <h1 class="centered-title">Seznam uživatelů, co napsali <span>„1“</span></h1>
+          <div class="forms banner-section" style="display:block">
+            <div class="column" style="max-width:900px">
+              <div id="startTime" class="small-text">Začátek sběru: —</div>
+              <div id="count" style="font-weight:700; margin: 6px 0 12px">Počet: 0</div>
+              <pre id="list" data-users="" style="white-space:pre-wrap; word-break:break-word; min-height:56px">Nikdo se nepřihlásil.</pre>
+              <div class="forms" style="margin-top:12px">
+                <button id="copyBtn" class="btn">Kopírovat seznam</button>
+                <button id="reloadBtn" class="btn">Načíst znovu</button>
+              </div>
+              <p id="status" class="small-text" style="margin-top:10px">Stav: načítám…</p>
+            </div>
+          </div>
         </div>
-
-        <pre id="list" data-users="">Nikdo se nepřihlásil.</pre>
-
-        <div class="row">
-          <button id="copyBtn">Kopírovat seznam</button>
-          <button id="reloadBtn">Načíst znovu</button>
-        </div>
-
-        <p id="status" class="muted" style="margin-top: 10px">Stav: načítám…</p>
       </section>
-    </main>
 
-    <script src="/script.js"></script>
+      <script src="./../script.js"></script>
+      <script src="./script.js"></script>
 
-    <script src="./script.js"></script>
+      <footer>
+        <div class="centered-title">
+          <p>© 2025 Kapitán Vojta</p>
+          <p>
+            Made by
+            <a href="https://github.com/Granc3k" target="_blank"><span class="text-color">Granc3k</span></a>
+          </p>
+        </div>
+      </footer>
+    </body>
+  </html>
 
-    <footer>
-      <div class="centered-title">
-        <p>© 2025 Kapitán Vojta</p>
-        <p>
-          Made by
-          <a href="https://github.com/Granc3k" target="_blank"
-            ><span class="text-color">Granc3k</span></a
-          >
-        </p>
-      </div>
-    </footer>
-  </body>
-</html>
