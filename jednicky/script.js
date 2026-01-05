@@ -22,6 +22,7 @@ async function loadUsers() {
     const users = Array.isArray(data.users) ? data.users : [];
     const start = data.start || "";
 
+    // Fill in of UI with data
     startEl.textContent = "Začátek sběru: " + fmtDate(start);
     countEl.textContent = "Počet: " + users.length;
     listEl.textContent  = users.length ? users.join(", ") : "Nikdo se nepřihlásil.";
@@ -41,11 +42,16 @@ function copyUsers() {
     alert("Žádná data k zkopírování.");
     return;
   }
-  navigator.clipboard.writeText(txt).then(
+
+  // dataset z API má "a, b, c" tak tam prostě kidnu new line :D
+  const lines = txt.split(", ").join("\n");
+
+  navigator.clipboard.writeText(lines).then(
     () => alert("Seznam zkopírován do schránky."),
     () => alert("Nepodařilo se zkopírovat.")
   );
 }
+
 
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("copyBtn").addEventListener("click", copyUsers);
