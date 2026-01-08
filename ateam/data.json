@@ -53,14 +53,19 @@
         "discord": "._.jeagermeister._."
       },
       {
+        "name": "cpt_liskojedd",
+        "description": "Zkušební Moderátor",
+        "discord": "lisakzadvermi"
+      },
+      {
+        "name": "cpt_lasin__",
+        "description": "Zkušební Moderátor",
+        "discord": "lasin__"
+      },
+      {
         "name": "filda24fik",
         "description": "Zkušební Moderátor",
         "discord": "filda24fik"
-      },
-      {
-        "name": "lasin__",
-        "description": "Zkušební Moderátor",
-        "discord": "lasin__"
       }
     ],
     "path_to_image": "./../images/logo_mod.png",
