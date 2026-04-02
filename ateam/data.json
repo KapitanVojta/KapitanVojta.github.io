@@ -48,9 +48,19 @@
         "discord": "barnosakova_adel"
       },
       {
+        "name": "cpt_fila",
+        "description": "Moderátor",
+        "discord": "cpt_fila"
+      },
+      {
         "name": "cpt_lasin__",
         "description": "Moderátor",
         "discord": "lasin__"
+      },
+      {
+        "name": "cpt_liskojedd",
+        "description": "Moderátor",
+        "discord": "lisakzadvermi"
       },
       {
         "name": "cpt_slivka_jeagermeister",
@@ -61,16 +71,6 @@
         "name": "filda24fik",
         "description": "Moderátor",
         "discord": "filda24fik"
-      },
-      {
-        "name": "cpt_fila",
-        "description": "Zkušební Moderátor",
-        "discord": "cpt_fila"
-      },
-      {
-        "name": "cpt_liskojedd",
-        "description": "Zkušební Moderátor",
-        "discord": "lisakzadvermi"
       }
     ],
     "path_to_image": "./../images/logo_mod.png",
