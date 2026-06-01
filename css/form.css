@@ -28,7 +28,15 @@
   border-radius: 8px;
   color: var(--third-color);
   outline: none;
+  box-sizing: border-box;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .field input,
+  .field textarea {
+    max-width: 100%;
+  }
 }
 
 .field input:focus,

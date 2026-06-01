@@ -135,22 +135,36 @@ a:hover {
     margin: auto;
   }
   .detail_twitch {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .twitch-chat {
-    display: block;
-    padding-left: 30px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
   }
   #embed_chat {
     width: 90vw !important;
     height: 140vh !important;
   }
+  .container-table {
+    overflow-x: auto;
+  }
   .table {
     width: 100%;
     display: block;
     font-size: 11px;
+    overflow: visible;
+    min-width: 380px;
+  }
+  .table td {
+    padding: 0.4rem 0.5rem;
+  }
+  .table th {
+    padding: 0.5rem 0.6rem;
   }
   .visually-hidden {
     position: absolute;
@@ -246,18 +260,22 @@ a:hover {
     margin: auto;
   }
   .detail_twitch {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .twitch-stream {
     display: none;
   }
   .twitch-chat {
-    display: block;
-    padding: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
   }
   #embed_chat {
-    width: 80vw !important;
+    width: 95vw !important;
     height: 100vh !important;
   }
   .table {
