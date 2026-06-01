@@ -1,19 +1,46 @@
 /*--------------- Form -------------------*/
-/* just some formating for the form site */
 
 .field {
-    margin-bottom: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: rgba(239, 239, 239, 0.55);
+  margin-bottom: 0.4rem;
+}
+
+.field input,
+.field textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.65rem 0.9rem;
+  font-size: 0.95rem;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(230, 233, 12, 0.2);
+  border-radius: 8px;
+  color: var(--third-color);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .field input,
+  .field textarea {
+    max-width: 100%;
   }
-  
-  .field label {
-    display: block;
-    font-size: 12px;
-    color: #777;
-  }
-  
-  .field input {
-    display: block;
-    min-width: 250px;
-    line-height: 1.5;
-    font-size: 14px;
-  }
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(230, 233, 12, 0.1);
+}
