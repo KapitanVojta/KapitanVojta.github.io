@@ -174,7 +174,7 @@
 
 /* Table header row */
 .dark-mode .table tr:first-child th {
-  background: rgba(230, 233, 12, 0.05);
+  background: #2a2a2a;
 }
 
 /* All non-header rows — uniform gray on td level */
@@ -186,6 +186,12 @@
 /* Section divider rows — yellow line on top of each td as separator */
 .dark-mode .table tr:has(.image-text-container) td {
   border-top: 2px solid rgba(230, 233, 12, 0.3);
+}
+
+/* Fix margin offset from .image-text-container so border aligns with other cells */
+.dark-mode .table td.image-text-container {
+  margin: 0;
+  vertical-align: middle;
 }
 
 /* Row hover */
