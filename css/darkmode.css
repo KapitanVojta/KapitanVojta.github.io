@@ -26,8 +26,11 @@
   -webkit-text-fill-color: var(--third-dark);
 }
 .dark-mode header {
-  box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
-  background: var(--primary-color);
+  background: rgba(24, 24, 24, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(230, 233, 12, 0.1);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
 }
 .dark-mode ul li a::before {
   content: "";
@@ -94,31 +97,33 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 1.6px solid;
-  display: grid;
-  place-items: center;
+  border: 1.6px solid rgba(230, 233, 12, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-radius: 50%;
-  padding: 0.39rem;
+  padding: 0.5rem;
   text-align: center;
   opacity: 0;
   animation: SocialAni 1s ease forwards;
   animation-delay: calc(0.2s * var(--socialAni));
-  display: flex;
-  flex-wrap: wrap;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 .dark-mode .social a:hover {
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: var(--third-dark);
+  -webkit-text-fill-color: var(--primary-color);
   background: linear-gradient(
     90deg,
     var(--secondary-color) 0%,
     var(--third-color) 100%
   );
-  box-shadow: 0 0 20px;
-  transition: all 0.3s ease-in-out;
+  border-color: var(--secondary-color);
+  box-shadow: 0 8px 24px rgba(230, 233, 12, 0.3);
+  transform: translateY(-4px);
 }
 .dark-mode .detail span {
   background: var(--third-color);
@@ -131,3 +136,66 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Hero role subtitle badge */
+.dark-mode .main h2 {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  border: 1px solid rgba(230, 233, 12, 0.28);
+  border-radius: 20px;
+  padding: 0.3rem 1.1rem;
+  background: rgba(230, 233, 12, 0.07);
+  margin-bottom: 0.5rem;
+}
+
+/* Giveaway event card */
+.dark-mode .detail_event {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(230, 233, 12, 0.08);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  margin: 2rem auto;
+  max-width: 820px;
+}
+
+/* Stream rules card styling */
+.dark-mode .detail > ol {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(230, 233, 12, 0.08);
+  border-radius: 12px;
+  padding: 1.2rem 1.2rem 1.2rem 2.8rem;
+  margin: 0.5rem 0 2rem 0;
+  line-height: 2.2;
+}
+
+/* Table header row */
+.dark-mode .table tr:first-child th {
+  background: rgba(230, 233, 12, 0.05);
+}
+
+/* All non-header rows — uniform gray on td level */
+.dark-mode .table tr:not(:first-child) td {
+  background: #2a2a2a;
+  transition: background 0.2s ease;
+}
+
+/* Section divider rows — yellow line on top of each td as separator */
+.dark-mode .table tr:has(.image-text-container) td {
+  border-top: 2px solid rgba(230, 233, 12, 0.3);
+}
+
+/* Row hover */
+.dark-mode .table tr:not(:first-child):hover td {
+  background: #333;
+}
+
+/* Footer separator */
+.dark-mode footer {
+  border-top: 1px solid rgba(230, 233, 12, 0.1);
+}
+
+

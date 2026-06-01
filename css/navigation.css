@@ -2,12 +2,12 @@
 /* formating and classes for navigation bar */
 
 header {
-  position: relative;
   box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
   background-color: var(--light-mode-background);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 .page-header {
   display: flex;

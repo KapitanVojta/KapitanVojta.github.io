@@ -53,6 +53,7 @@ body {
 }
 a {
   color: var(--primary-color);
+  transition: color 0.2s ease;
 }
 a:hover {
   color: var(--secondary-color);
@@ -302,4 +303,19 @@ a:hover {
   .image-text-container img {
     margin-right: 2px;
   }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--primary-color2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--third-color);
 }

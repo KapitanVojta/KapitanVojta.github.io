@@ -34,6 +34,13 @@
   opacity: 0;
   animation: topSideAni 1s ease forwards;
 }
+.main h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0;
+  animation: topSideAni 1s ease forwards;
+  animation-delay: 0.1s;
+}
 .main p {
   line-height: 1.7;
   font-size: 1.15rem;
@@ -56,18 +63,19 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   border: 1.6px solid;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border-radius: 50%;
-  padding: 0.39rem;
+  padding: 0.5rem;
   text-align: center;
   opacity: 0;
   animation: SocialAni 1s ease forwards;
   animation-delay: calc(0.2s * var(--socialAni));
-  display: flex;
-  flex-wrap: wrap;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .social a:hover {
   -webkit-background-clip: text;
@@ -78,8 +86,8 @@
     var(--primary-color) 0%,
     var(--secondary-color) 100%
   );
-  box-shadow: 0 0 20px;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 24px rgba(230, 233, 12, 0.2);
+  transform: translateY(-4px);
 }
 .detail span {
   background: var(--primary-color);
@@ -180,7 +188,11 @@
 }
 .centered-title {
   text-align: center;
-  margin: 2rem;
+  padding: 1.5rem 0;
+}
+footer {
+  margin-top: 4rem;
+  padding: 0 0 1rem 0;
 }
 .centered-title a {
   text-decoration: none;
@@ -196,23 +208,28 @@
   color: var(--primary-color);
 }
 .table {
-  border: 5px solid var(--primary-color);
+  border: 1px solid rgba(180, 180, 180, 0.2);
   margin: 0 auto;
   animation: rightSideAni 1s ease forwards;
   align-self: center;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .table th {
-  border-bottom: 5px solid var(--primary-color);
+  border-bottom: 1px solid rgba(180, 180, 180, 0.2);
+  padding: 0.75rem 1rem;
 }
 .table-th-middle {
-  border-left: 5px solid var(--primary-color);
-  border-right: 5px solid var(--primary-color);
+  border-left: 1px solid rgba(180, 180, 180, 0.15);
+  border-right: 1px solid rgba(180, 180, 180, 0.15);
 }
 .table-th-right {
-  border-left: 5px solid var(--primary-color);
+  border-left: 1px solid rgba(180, 180, 180, 0.15);
 }
 .table-th-left {
-  border-right: 5px solid var(--primary-color);
+  border-right: 1px solid rgba(180, 180, 180, 0.15);
 }
 .banner-section {
   display: flex;
