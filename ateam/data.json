@@ -71,11 +71,6 @@
         "name": "filda24fik",
         "description": "Moderátor",
         "discord": "filda24fik"
-      },
-      {
-        "name": "itsdet_",
-        "description": "Zkušební Moderátor",
-        "discord": "detxd_"
       }
     ],
     "path_to_image": "./../images/logo_mod.png",
