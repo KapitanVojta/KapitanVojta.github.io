@@ -89,14 +89,6 @@
   -webkit-text-fill-color: transparent;
 }
 .dark-mode .social a {
-  background: linear-gradient(
-    to right,
-    var(--secondary-color) 0%,
-    var(--third-color) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   border: 1.6px solid rgba(230, 233, 12, 0.5);
   display: flex;
   flex-wrap: wrap;
@@ -112,10 +104,17 @@
   animation-delay: calc(0.2s * var(--socialAni));
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
-.dark-mode .social a:hover {
+.dark-mode .social a em {
+  background: linear-gradient(
+    to right,
+    var(--secondary-color) 0%,
+    var(--third-color) 100%
+  );
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: var(--primary-color);
+  -webkit-text-fill-color: transparent;
+}
+.dark-mode .social a:hover {
   background: linear-gradient(
     90deg,
     var(--secondary-color) 0%,
@@ -124,6 +123,10 @@
   border-color: var(--secondary-color);
   box-shadow: 0 8px 24px rgba(230, 233, 12, 0.3);
   transform: translateY(-4px);
+}
+.dark-mode .social a:hover em {
+  background: none;
+  -webkit-text-fill-color: var(--primary-color);
 }
 .dark-mode .detail span {
   background: var(--third-color);
